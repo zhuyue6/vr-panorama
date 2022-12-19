@@ -1,0 +1,25 @@
+.mixin {
+  .flex(@justify-content: center, @align-items: center, @flex-direction: row) {
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+    align-items: @align-items;
+  }
+  
+  .container(@flex-direction: column, @justify-content: flex-start, @align-items: normal) {
+    width: 100%;
+    height: 100%;
+    .flex(@justify-content, @align-items, @flex-direction)
+  }
+
+  .transparent-circle(@diameter) {
+    .flex();
+    width: @diameter;
+    height: @diameter;
+    border-radius: @diameter;
+  }
+}
+
+@white: rgba(255, 255, 255);
+@transparent-black: rgba(0, 0, 0, 0.3);
+@primary: var(--van-primary-color);

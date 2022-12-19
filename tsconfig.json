@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "strict": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "baseUrl": ".",
+        "types": ["vite/client"],
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"],
+    "files": ["type.d.ts", "vite.config.ts"]
+}

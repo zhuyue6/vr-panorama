@@ -9,5 +9,5 @@ interface ListResponse {
 }
 
 export function getList(params: ListParams) {
-    return http.get<ListResponse>('')
+    return http.get<ListResponse>('', params)
 }

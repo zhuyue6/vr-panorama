@@ -16,12 +16,16 @@ declare module '@vue/runtime-core' {
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElSwitch: typeof import('element-plus/es')['ElSwitch']
     PageTable: typeof import('./src/components/pageTable/index.vue')['default']
+    Panorama: typeof import('./src/components/panorama/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Scroll: typeof import('./src/components/scroll/index.vue')['default']
     SearchPanel: typeof import('./src/components/searchPanel/index.vue')['default']
     VanIcon: typeof import('vant/es')['Icon']
+    VanLoading: typeof import('vant/es')['Loading']
+    VanPopover: typeof import('vant/es')['Popover']
     VanTab: typeof import('vant/es')['Tab']
     VanTabs: typeof import('vant/es')['Tabs']
+    View: typeof import('./src/components/panorama/view.vue')['default']
   }
 }

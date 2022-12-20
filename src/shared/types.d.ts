@@ -1,3 +1,3 @@
 interface commonObject {
-  [index: string]: any;
+    [index: string]: any
 }
